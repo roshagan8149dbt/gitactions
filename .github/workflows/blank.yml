@@ -1,0 +1,16 @@
+name : multi_line_command
+on: workflow_dispatch
+jobs:
+  second_job:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: multilinecommand
+        run: |
+            echo "old roshan good bye"
+            echo "new roshan welcome"
+            echo "i see myself free from this in next 2 months"
+            echo " i will do this anyhow, doesn't matter"
+      - name: struggle
+        run: |
+            echo "i know it will bring lot of issues but still i want to do it anyhow"
+            echo "i doont care even if i have to give my life for a good cause"
